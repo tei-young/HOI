@@ -1,0 +1,25 @@
+name: HoiMC
+version: '${project.version}'
+main: com.hoimc.HoiMCPlugin
+api-version: '1.20'
+author: HoiMC Team
+description: Hearts of Iron style strategy game for Minecraft
+website: https://github.com/yourname/hoimc
+
+commands:
+  hoimc:
+    description: Main HoiMC command
+    usage: /hoimc <subcommand>
+    aliases: [hoi, hoicraft]
+  country:
+    description: Country management commands
+    usage: /country <select|info|list>
+    aliases: [c, nation]
+
+permissions:
+  hoimc.admin:
+    description: Allows access to admin commands
+    default: op
+  hoimc.player:
+    description: Allows basic gameplay
+    default: true
